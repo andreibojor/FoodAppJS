@@ -1,5 +1,3 @@
-// update
-
 function displayMealCards(meals) {
   let mealCardsContainer = document.querySelector(
     ".meal-card-results-container"
