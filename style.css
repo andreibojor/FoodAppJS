@@ -372,6 +372,7 @@ header {
 .flag-buttons {
   display: grid;
   grid-template-columns: repeat(13, 1fr);
+  grid-gap: 0.5em;
 }
 
 .letter-btn {
@@ -580,8 +581,6 @@ header {
 }
 
 .flag-btn {
-  margin: 0.2em;
-  padding: 0.75em;
   border: none;
   background-color: white;
   cursor: pointer;
@@ -653,6 +652,24 @@ header {
   margin: 0.5em;
 }
 
+@media (max-width: 768px) {
+  .meal-card-results {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .categories-grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .flag-buttons {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .alphabet-buttons {
+    grid-template-columns: repeat(9, 1fr);
+  }
+}
+
 @media (max-width: 450px) {
   .meal-card-results {
     grid-template-columns: 1fr;
@@ -688,22 +705,8 @@ header {
   .table tr td {
     padding: 0.5em;
   }
-}
-
-@media (max-width: 768px) {
-  .meal-card-results {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .categories-grid-container {
-    grid-template-columns: 1fr 1fr;
-  }
 
   .flag-buttons {
-    grid-template-columns: repeat(6, 1fr);
-  }
-
-  .alphabet-buttons {
-    grid-template-columns: repeat(9, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
 }
