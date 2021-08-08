@@ -51,10 +51,10 @@ body {
   line-height: 1.4;
   color: rgba(0, 0, 0, 0.8);
 
-  background-image: url(http://neptune.pinsupreme.com/wp-content/uploads/2015/09/bg2.jpg);
-  background-repeat: repeat;
+  background-image: url("./img/bg-8.jpg");
+  background-repeat: no-repeat;
   background-position: top center;
-  background-size: contain;
+  background-size: cover;
 }
 
 a {
@@ -366,9 +366,9 @@ header {
 }
 
 .alphabet-buttons {
-  display: grid;
-  grid-template-columns: repeat(26, 1fr);
+  text-align: center;
 }
+
 .flag-buttons {
   display: grid;
   grid-template-columns: repeat(13, 1fr);

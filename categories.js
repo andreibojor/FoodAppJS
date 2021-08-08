@@ -22,10 +22,16 @@ function displayCat(categories) {
 function getCategoryHtml(category) {
   let backgroundImage = `url(${category.strCategoryThumb})`;
   let categoryHtml = `
-    <div class="category-item" style="background-image:${backgroundImage}">
-      <div class="category-fader"></div>
-      <h3 class="category-title">${category.strCategory}</h3>
-    </div>
+    <a href="#">
+      <div class="category-item" style="background-image:${
+        category.strCategory === "Chicken"
+          ? `url(./img/chicken-food.jpg)`
+          : backgroundImage
+      }">
+        <div class="category-fader"></div>
+        <h3 class="category-title">${category.strCategory}</h3>
+      </div>
+    </a>
     `;
   return categoryHtml;
 }
