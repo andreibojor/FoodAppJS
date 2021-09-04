@@ -52,13 +52,20 @@ body {
   color: rgba(0, 0, 0, 0.8);
 
   background-image: url("./img/bg-8.jpg");
+
+  /* Set a specific height */
+  min-height: 100vh;
+
+  /* Parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
-  background-position: top center;
   background-size: cover;
 }
 
 a {
   text-decoration: none;
+  color: var(--clr-dark);
 }
 
 .container {
